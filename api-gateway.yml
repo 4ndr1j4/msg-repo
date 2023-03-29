@@ -18,3 +18,8 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://service-registry:9001/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,refresh
